@@ -19,12 +19,17 @@ message User {
     repeated string email = 16;
 
     Address address =21;
+    Address.Cordinate cordinate = 22;
 }
 
 message Address {
     string street=1;
     string city=2;
     string country =3;
+    message Cordinate {
+        double latitude = 1;
+        double longitude = 2;
+      };
 }
 
 

@@ -20,6 +20,10 @@ func BasicHello() {
 		Password: []byte("Password"),
 		Email:    []string{"ajay.yadav@h.com", "baba.jji@palem.com"},
 		Gender:   basic.Gender_GENDER_MALE,
+		Cordinate: &basic.Address_Cordinate{
+			Longitude: 0.3434,
+			Latitude:  4.5656,
+		},
 	}
 
 	log.Println(&user)

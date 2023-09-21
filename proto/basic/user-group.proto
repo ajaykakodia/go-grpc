@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "proto/basic/user.proto";
 
-option go_package = "my-protobuf/protogen/basic";
+option go_package = "github.com/ajaykakodia/go-grpc/protogen/basic";
 
 message UserGroup {
     string group_id = 1 [json_name="group_id"];

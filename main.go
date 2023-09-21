@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/ajaykakodia/go-grpc/basic"
+	"github.com/ajaykakodia/go-grpc/jobsearch"
 )
 
 type logWriter struct {
@@ -20,9 +20,11 @@ func main() {
 
 	log.SetOutput(&logWriter{})
 
-	basic.BasicHello()
+	//basic.BasicHello()
 	//basic.BasicUser()
 	//basic.ProtoToJsonUser()
 	//basic.JsonToProtoUser()
-	basic.UserGroupCall()
+	//basic.UserGroupCall()
+	jobsearch.JobSearchCandidate()
+	jobsearch.JobSearchSoftware()
 }

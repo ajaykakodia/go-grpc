@@ -1,6 +1,6 @@
 syntax="proto3";
 
-option go_package="my-protobuf/protogen/basic";
+option go_package="github.com/ajaykakodia/go-grpc/protogen/basic";
 
 
 enum Gender {
